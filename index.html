@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CBT Seleksi Pramuka Garuda - Kwarran Gemolong</title>
+  <title>CBT Seleksi Pramuka Garuda - Kwarran Gondang</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- FontAwesome Icons -->
@@ -71,7 +71,7 @@
           <i class="fa-solid fa-shield-halved"></i>
         </div>
         <h1 class="text-2xl font-black text-white tracking-wide">CBT PRAMUKA GARUDA</h1>
-        <p class="text-xs text-yellow-300 font-semibold tracking-wider uppercase mt-1">Kwartir Ranting Gemolong - Kab. Sragen</p>
+        <p class="text-xs text-yellow-300 font-semibold tracking-wider uppercase mt-1">Kwartir Ranting Gondang - Kab. Sragen</p>
       </div>
 
       <!-- Formulir Login Peserta -->
@@ -105,7 +105,7 @@
           <label for="input-gudep" class="block text-xs font-bold text-gray-700 uppercase mb-1 flex items-center gap-1.5">
             <i class="fa-solid fa-school text-green-700"></i> Gugus Depan / Pangkalan Sekolah
           </label>
-          <input type="text" id="input-gudep" required placeholder="Contoh: SDN 1 GEMOLONG" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-green-700 focus:border-green-700 text-sm font-semibold transition outline-none bg-gray-50 focus:bg-white">
+          <input type="text" id="input-gudep" required placeholder="Contoh: SDN 1 GONDANG" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-green-700 focus:border-green-700 text-sm font-semibold transition outline-none bg-gray-50 focus:bg-white">
         </div>
 
         <!-- Input Kwartir Ranting -->
@@ -113,7 +113,7 @@
           <label for="input-kwarran" class="block text-xs font-bold text-gray-700 uppercase mb-1 flex items-center gap-1.5">
             <i class="fa-solid fa-map-location-dot text-green-700"></i> Kwartir Ranting (Kwarran)
           </label>
-          <input type="text" id="input-kwarran" required value="GEMOLONG" placeholder="Contoh: GEMOLONG" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-green-700 focus:border-green-700 text-sm font-semibold transition outline-none bg-gray-50 focus:bg-white">
+          <input type="text" id="input-kwarran" required value="GONDANG" placeholder="Contoh: GONDANG" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-green-700 focus:border-green-700 text-sm font-semibold transition outline-none bg-gray-50 focus:bg-white">
         </div>
 
         <!-- Tingkat Pramuka -->
@@ -143,7 +143,7 @@
       </form>
 
       <div class="p-4 bg-gray-100 border-t border-gray-200 text-center text-xs text-gray-500">
-        &copy; 2026 Kwarran GEMOLONG - Kwarcab Sragen
+        &copy; 2026 Kwarran GONDANG - Kwarcab Sragen
       </div>
 
     </div>
@@ -163,7 +163,7 @@
             <span class="font-extrabold text-green-900 text-lg sm:text-xl tracking-wide" id="disp-username">DEN</span>
             <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-green-300" id="disp-tingkat">Siaga</span>
           </div>
-          <p class="text-xs sm:text-sm text-gray-500 font-medium" id="disp-school">SDN 1 GEMOLONG | Kwarran GEMOLONG</p>
+          <p class="text-xs sm:text-sm text-gray-500 font-medium" id="disp-school">SDN 1 GONDANG | Kwarran GONDANG</p>
         </div>
       </div>
 
@@ -194,7 +194,7 @@
           <i class="fa-solid fa-award text-2xl text-yellow-400"></i>
         </div>
         <div>
-          <h1 class="font-bold text-lg sm:text-xl">Seleksi Pramuka Garuda Kwartir Ranting Gemolong</h1>
+          <h1 class="font-bold text-lg sm:text-xl">Seleksi Pramuka Garuda Kwartir Ranting Gondang</h1>
           <p class="text-xs text-green-100">Tes Pengetahuan Umum & Kepramukaan Siaga / Penggalang</p>
         </div>
       </div>
@@ -305,8 +305,8 @@
 
   </main>
 
-  <!-- Halaman Hasil & Pembahasan -->
-  <section id="result-app" class="hidden max-w-5xl mx-auto px-4 sm:px-6 py-8 w-full">
+  <!-- Halaman Hasil Akhir (Tanpa Pembahasan) -->
+  <section id="result-app" class="hidden max-w-3xl mx-auto px-4 sm:px-6 py-8 w-full">
     <div class="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
       
       <!-- Banner Hasil -->
@@ -332,7 +332,7 @@
       </div>
 
       <!-- Statistik Nilai -->
-      <div class="p-6 sm:p-8 bg-gray-50 border-b border-gray-200">
+      <div class="p-6 sm:p-8 bg-gray-50">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div class="bg-white p-4 rounded-xl border border-gray-200 shadow-xs text-center">
             <span class="text-xs font-semibold text-gray-500 uppercase block">Total Soal</span>
@@ -352,25 +352,16 @@
           </div>
         </div>
 
-        <div class="mt-6 flex flex-wrap gap-3 justify-center">
-          <button onclick="window.print()" class="bg-gray-800 hover:bg-gray-900 text-white font-semibold px-5 py-2.5 rounded-xl transition flex items-center space-x-2 text-sm shadow">
+        <div class="mt-8 flex flex-wrap gap-3 justify-center">
+          <button onclick="window.print()" class="bg-gray-800 hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-xl transition flex items-center space-x-2 text-sm shadow">
             <i class="fa-solid fa-print"></i>
             <span>Cetak Hasil</span>
           </button>
-          <button onclick="restartExam()" class="bg-green-800 hover:bg-green-900 text-white font-semibold px-5 py-2.5 rounded-xl transition flex items-center space-x-2 text-sm shadow">
+          <button onclick="restartExam()" class="bg-green-800 hover:bg-green-900 text-white font-semibold px-6 py-3 rounded-xl transition flex items-center space-x-2 text-sm shadow">
             <i class="fa-solid fa-rotate-right"></i>
             <span>Ulangi Tes</span>
           </button>
         </div>
-      </div>
-
-      <!-- Kunci Jawaban & Pembahasan -->
-      <div class="p-6 sm:p-8">
-        <h3 class="font-bold text-lg text-gray-800 mb-4 flex items-center gap-2">
-          <i class="fa-solid fa-file-signature text-green-700"></i>
-          <span>Pembahasan & Kunci Jawaban</span>
-        </h3>
-        <div class="space-y-4" id="review-container"></div>
       </div>
 
     </div>
@@ -417,28 +408,26 @@
 
   <!-- Footer -->
   <footer id="main-footer" class="hidden bg-white border-t border-gray-200 py-4 text-center text-xs text-gray-500 mt-auto">
-    <p>&copy; 2026 Kwarran GEMOLONG - Kwarcab Sragen. System CBT Online Pramuka Garuda.</p>
+    <p>&copy; 2026 Kwarran GONDANG - Kwarcab Sragen. System CBT Online Pramuka Garuda.</p>
   </footer>
 
   <script>
     // URL Web App Google Apps Script Default (Terhubung Otomatis)
     let scriptAppUrl = "https://script.google.com/macros/s/AKfycbx8ItQIY4_PcK56-p_UTOZW9zfUc8KoKyrT0rlmlYQWswHMq41fUOt42IGP3r7injQxUQ/exec";
 
-    // Data 50 Soal Kwarran Gemolong
+    // Data 50 Soal
     const questions = [
       {
         id: 1,
         question: "Soal 1. Karbon dioksida biasa disebut juga ...",
         options: ["A. H₂O", "B. CO", "C. CO₂", "D. O₂"],
-        answer: "C",
-        explain: "Karbon dioksida memiliki rumus kimia CO₂."
+        answer: "C"
       },
       {
         id: 2,
         question: "Soal 2. Kitab suci yang dimiliki pemeluk agama Kristen adalah ...",
         options: ["A. Al-qur'an", "B. Injil", "C. Alkitab", "D. Weda"],
-        answer: "C",
-        explain: "Alkitab merupakan kitab suci umat Kristen."
+        answer: "C"
       },
       {
         id: 3,
@@ -449,64 +438,55 @@
           "C. Hijau, kuning, biru, merah, dan putih",
           "D. Hijau, kuning, biru, putih, dan hitam"
         ],
-        answer: "C",
-        explain: "Warna dasar TKK dibagi menjadi 5 bidang: Kuning, Merah, Putih, Biru, dan Hijau."
+        answer: "C"
       },
       {
         id: 4,
         question: "Soal 4. Museum Manusia Purba Sangiran terletak di Kecamatan ...",
         options: ["A. Kalijambe", "B. Sragen", "C. Gemolong", "D. Sumberlawang"],
-        answer: "A",
-        explain: "Situs Museum Manusia Purba Sangiran terletak di Kecamatan Kalijambe, Kab. Sragen."
+        answer: "A"
       },
       {
         id: 5,
         question: "Soal 5. Jika pengambilan keputusan dengan musyawarah mufakat tidak berhasil, maka dilakukan pengambilan keputusan secara ...",
         options: ["A. Diputuskan ketua", "B. Voting/suara terbanyak", "C. Diputuskan pengurus", "D. Mufakat"],
-        answer: "B",
-        explain: "Pemungutan suara (voting) dilakukan apabila musyawarah mufakat tidak mencapai kesepakatan."
+        answer: "B"
       },
       {
         id: 6,
         question: "Soal 6. Motto pramuka garuda yaitu ...",
         options: ["A. Setia Setiap Saat", "B. Setia Siap Sedia", "C. Selalu Siap Sedia", "D. Setia Siap Sedia Setiap Saat"],
-        answer: "D",
-        explain: "Motto Pramuka Garuda adalah 'Setia, Siap, Sedia'."
+        answer: "D"
       },
       {
         id: 7,
         question: "Soal 7. Dalam mengambil keputusan dalam suatu kelompok atau organisasi sebaiknya dilakukan secara ...",
         options: ["A. Individu", "B. Pribadi ketua", "C. Hak sekretaris", "D. Musyawarah"],
-        answer: "D",
-        explain: "Pengambilan keputusan kelompok yang demokratis mengutamakan musyawarah."
+        answer: "D"
       },
       {
         id: 8,
         question: "Soal 8. Salah satu wilayah yang termasuk Zona Waktu Indonesia Tengah (WITA) adalah ...",
         options: ["A. Sumatera", "B. Jawa", "C. Bali", "D. Papua"],
-        answer: "C",
-        explain: "Pulau Bali termasuk dalam zona Waktu Indonesia Tengah (WITA)."
+        answer: "C"
       },
       {
         id: 9,
         question: "Soal 9. Besar derajat yang menunjukkan arah mata angin Barat adalah ...",
         options: ["A. 45 derajat", "B. 90 derajat", "C. 0 derajat/360 derajat", "D. 270 derajat"],
-        answer: "D",
-        explain: "Mata angin Barat berada pada posisi azimuth 270°."
+        answer: "D"
       },
       {
         id: 10,
         question: "Soal 10. ing ngarsa sun tuladha, ing madya mangun karsa, tut wuri handayani merupakan semboyan yang diciptakan oleh...",
         options: ["A. Ir. Soekarno", "B. Moh. Hatta", "C. W.R. Supratman", "D. Ki Hajar Dewantara"],
-        answer: "D",
-        explain: "Semboyan pendidikan Indonesia tersebut diciptakan oleh Ki Hajar Dewantara."
+        answer: "D"
       },
       {
         id: 11,
         question: "Soal 11. Partai final FIFA World Cup 2026 mempertemukan dua negara yaitu ...",
         options: ["A. Argentina vs Perancis", "B. Argentina vs Portugal", "C. Argentina vs Spanyol", "D. Spanyol vs Perancis"],
-        answer: "A",
-        explain: "Pilihan A merupakan contoh ilustrasi laga final antar tim raksasa."
+        answer: "A"
       },
       {
         id: 12,
@@ -517,22 +497,19 @@
           "C. Air, tanah, pupuk, dan oksigen",
           "D. Cahaya, angin, tanah, dan pupuk"
         ],
-        answer: "A",
-        explain: "Fotosintesis dipengaruhi oleh cahaya, air, CO2, dan suhu."
+        answer: "A"
       },
       {
         id: 13,
         question: "Soal 13. Kepanjangan IKN adalah...",
         options: ["A. Ibu Kota Nasional", "B. Ibu Kota Negara Indonesia", "C. Ibu Kota Nusantara", "D. Ibu Kota Nasionalisme"],
-        answer: "C",
-        explain: "IKN adalah singkatan dari Ibu Kota Nusantara."
+        answer: "C"
       },
       {
         id: 14,
         question: "Soal 14. Salah satu syarat menjadi Siaga Tata adalah memiliki tabungan secara teratur minimal ...",
         options: ["A. 6 minggu", "B. 1 tahun", "C. 1 bulan", "D. 12 minggu"],
-        answer: "A",
-        explain: "Syarat menabung pada SKU Siaga Tata adalah minimal 6 minggu berturut-turut."
+        answer: "A"
       },
       {
         id: 15,
@@ -543,8 +520,7 @@
           "C. Ada kepala negara atau pejabat tinggi negara",
           "D. Ada jenazah yang sedang lewat"
         ],
-        answer: "B",
-        explain: "Salam Janji diberikan saat ada anggota yang sedang mengucapkan janji Dwi Satya/Tri Satya."
+        answer: "B"
       },
       {
         id: 16,
@@ -555,15 +531,13 @@
           "C. Siaga itu patuh pada kedua orang tuanya; Siaga itu berani dan selalu setia.",
           "D. Siaga itu patuh pada ayah dan ibundanya; Siaga itu berani dan selalu setia."
         ],
-        answer: "B",
-        explain: "Dwi Darma: 1. Siaga itu patuh pada ayah dan ibundanya. 2. Siaga itu berani dan tidak putus asa."
+        answer: "B"
       },
       {
         id: 17,
         question: "Soal 17. Pernyataan bahwa setiap anggota Pramuka harus menjadi tunas bangsa Indonesia yang berkarakter, tangguh, dan mampu beradaptasi di zaman digitalisasi merupakan salah satu ... Gerakan Pramuka.",
         options: ["A. Semboyan", "B. Tujuan", "C. Visi", "D. Motto"],
-        answer: "B",
-        explain: "Merupakan salah satu Tujuan pembentukan karakter Gerakan Pramuka."
+        answer: "B"
       },
       {
         id: 18,
@@ -574,36 +548,31 @@
           "C. Prabowo Subianto",
           "D. Sigit Pamungkas, S.IP., M.A."
         ],
-        answer: "D",
-        explain: "Kamabicab Kwarcab Sragen dijabat oleh Bupati / Pj. Bupati Sragen."
+        answer: "D"
       },
       {
         id: 19,
         question: "Soal 19. Wayang Kulit Purwa merupakan salah satu kesenian wayang yang berasal dari ...",
         options: ["A. Jawa Barat", "B. Jawa Timur", "C. Jawa Tengah", "D. Madura"],
-        answer: "C",
-        explain: "Wayang Kulit Purwa berkembang pesat di Jawa Tengah."
+        answer: "C"
       },
       {
         id: 20,
         question: "Soal 20. Kutipan \"Demi kehormatanku aku berjanji akan bersungguh-sungguh...\" merupakan bunyi dari ...",
         options: ["A. Dwi Darma", "B. Dasa Darma", "C. Tri Satya", "D. Dwi Satya"],
-        answer: "C",
-        explain: "Kalimat pembuka janji Pramuka Tri Satya dan Dwi Satya."
+        answer: "C"
       },
       {
         id: 21,
         question: "Soal 21. badge WOSM memiliki warna dasar",
         options: ["A. Biru", "B. Ungu", "C. Putih", "D. Hijau"],
-        answer: "B",
-        explain: "Badge WOSM memiliki warna dasar Ungu."
+        answer: "B"
       },
       {
         id: 22,
         question: "Soal 22. Budi beragama Islam. Ketika azan berkumandang, ia akan melaksanakan ibadah. Tempat ibadah Budi adalah ...",
         options: ["A. Masjid", "B. Gereja", "C. Vihara", "D. Pura"],
-        answer: "A",
-        explain: "Tempat ibadah umat Islam adalah Masjid."
+        answer: "A"
       },
       {
         id: 23,
@@ -614,8 +583,7 @@
           "C. SPPG (Satuan Pelayanan Pemenuhan Gizi)",
           "D. Dapur Sehat Bersama"
         ],
-        answer: "C",
-        explain: "SPPG merupakan Satuan Pelayanan Pemenuhan Gizi."
+        answer: "C"
       },
       {
         id: 24,
@@ -626,15 +594,13 @@
           "C. Pencipta lagu Indonesia Raya",
           "D. Perumus teks Proklamasi"
         ],
-        answer: "C",
-        explain: "W.R. Supratman adalah pencipta lagu kebangsaan Indonesia Raya."
+        answer: "C"
       },
       {
         id: 25,
         question: "Soal 25. Tanda Kecakapan Umum dipasang pada bagian seragam Pramuka ...",
         options: ["A. Saku kanan", "B. Lengan baju kiri", "C. Di atas saku kiri", "D. Lengan baju kanan"],
-        answer: "B",
-        explain: "TKU dipasang di lengan baju sebelah kiri."
+        answer: "B"
       },
       {
         id: 26,
@@ -645,29 +611,25 @@
           "C. Syarat Pramuka Siaga",
           "D. Syarat Pramuka Garuda"
         ],
-        answer: "A",
-        explain: "TKK diberikan setelah lulus memenuhi Syarat Kecakapan Khusus (SKK)."
+        answer: "A"
       },
       {
         id: 27,
         question: "Soal 27. Mata uang Ringgit merupakan mata uang negara ...",
         options: ["A. Indonesia", "B. Singapura", "C. Malaysia", "D. India"],
-        answer: "C",
-        explain: "Ringgit adalah mata uang resmi Malaysia."
+        answer: "C"
       },
       {
         id: 28,
         question: "Soal 28. Hari Pramuka diperingati setiap tanggal ...",
         options: ["A. 17 Agustus", "B. 18 Agustus", "C. 13 Agustus", "D. 14 Agustus"],
-        answer: "D",
-        explain: "Hari Pramuka diperingati setiap tanggal 14 Agustus."
+        answer: "D"
       },
       {
         id: 29,
         question: "Soal 29. TKK bidang Agama, Mental, Moral, Spiritual, Pembentukan Pribadi dan Watak menggunakan warna dasar ...",
         options: ["A. Kuning", "B. Biru", "C. Putih", "D. Merah"],
-        answer: "A",
-        explain: "Warna dasar TKK Bidang Agama, Mental, dan Moral adalah Kuning."
+        answer: "A"
       },
       {
         id: 30,
@@ -678,29 +640,25 @@
           "C. Salam Pandu, Salam Janji, Salam Hormat",
           "D. Salam Pertemuan, Salam Janji, Salam Hormat"
         ],
-        answer: "B",
-        explain: "Salam Pramuka terdiri dari Salam Biasa, Salam Hormat, dan Salam Janji."
+        answer: "B"
       },
       {
         id: 31,
         question: "Soal 31. Mayoritas penduduk di Pulau Bali menganut agama ...",
         options: ["A. Hindu", "B. Islam", "C. Kristen", "D. Konghucu"],
-        answer: "A",
-        explain: "Mayoritas penduduk Pulau Bali beragama Hindu."
+        answer: "A"
       },
       {
         id: 32,
         question: "Soal 32. Lagu kebangsaan Negara Indonesia adalah ...",
         options: ["A. Padamu Negeri", "B. Indonesia Raya", "C. Mengheningkan Cipta", "D. Merdeka"],
-        answer: "B",
-        explain: "Lagu kebangsaan Indonesia adalah Indonesia Raya."
+        answer: "B"
       },
       {
         id: 33,
         question: "Soal 33. Warna garis tepi Medali Pramuka Garuda adalah ...",
         options: ["A. Hijau", "B. Putih", "C. Biru", "D. Kuning"],
-        answer: "D",
-        explain: "Warna pinggiran medali Pramuka Garuda berhias pita kuning."
+        answer: "D"
       },
       {
         id: 34,
@@ -711,8 +669,7 @@
           "C. Islam, Kristen, Katolik, Hindu, Buddha, Konghucu, dan Santo",
           "D. Islam, Kristen, Katolik, Hindu, Buddha, dan Konghucu"
         ],
-        answer: "D",
-        explain: "6 agama resmi: Islam, Kristen, Katolik, Hindu, Buddha, dan Konghucu."
+        answer: "D"
       },
       {
         id: 35,
@@ -723,15 +680,13 @@
           "C. Tanda Pramuka Garuda (TPG)",
           "D. Tanda Penghargaan Pramuka Dewasa (TPOD)"
         ],
-        answer: "B",
-        explain: "Tanda penghargaan lulus SKU berupa Tanda Kecakapan Umum (TKU)."
+        answer: "B"
       },
       {
         id: 36,
         question: "Soal 36. Dalam tokoh pewayangan, Kakak tertua Pandawa ialah ...",
         options: ["A. Puntadewa", "B. Janaka", "C. Nakula", "D. Werkudara"],
-        answer: "A",
-        explain: "Puntadewa (Yudhistira) adalah putra tertua Pandawa."
+        answer: "A"
       },
       {
         id: 37,
@@ -742,43 +697,37 @@
           "C. Aurel memakai pakaian Bali.",
           "D. Di atas panggung Aurel menari Bali."
         ],
-        answer: "A",
-        explain: "Pola: Aurel (Subjek) sedang menari (Predikat) Bali (Objek) di atas panggung (Keterangan)."
+        answer: "A"
       },
       {
         id: 38,
         question: "Soal 38. Tari Tayub merupakan salah satu kesenian tari yang berasal dari ...",
         options: ["A. Solo", "B. Surakarta", "C. Yogyakarta", "D. Sragen"],
-        answer: "D",
-        explain: "Tari Tayub merupakan kesenian tradisional khas Kabupaten Sragen."
+        answer: "D"
       },
       {
         id: 39,
         question: "Soal 39. Warna dasar tanda jabatan Pimpinan Barung adalah ...",
         options: ["A. Kuning", "B. Hijau", "C. Biru", "D. Hitam"],
-        answer: "A",
-        explain: "Warna dasar tanda Pimpinan Barung Siaga berwarna kuning/hijau sesuai ketentuan."
+        answer: "A"
       },
       {
         id: 40,
         question: "Soal 40. TKK dalam Pramuka dikelompokkan menjadi ... bidang.",
         options: ["A. 6", "B. 8", "C. 10", "D. 5"],
-        answer: "D",
-        explain: "TKK dikelompokkan menjadi 5 Bidang."
+        answer: "D"
       },
       {
         id: 41,
         question: "Soal 41. Peristiwa Sumpah Pemuda terjadi pada tanggal ...",
         options: ["A. 17 Agustus 1945", "B. 28 Oktober 1945", "C. 28 Oktober 1928", "D. 17 Agustus 1928"],
-        answer: "C",
-        explain: "Sumpah Pemuda terjadi pada tanggal 28 Oktober 1928."
+        answer: "C"
       },
       {
         id: 42,
         question: "Soal 42. Menunjukkan rasa hormat dan kasih sayang kepada orang tua dan anggota keluarga lainnya merupakan salah satu contoh penghormatan ...",
         options: ["A. Dwi Satya", "B. Tri Satya", "C. Dasa Darma", "D. Dwi Darma"],
-        answer: "D",
-        explain: "Pengamalan bunyi Dwi Darma Pramuka Siaga."
+        answer: "D"
       },
       {
         id: 43,
@@ -789,8 +738,7 @@
           "C. Syarat kecakapan khusus Penggalang",
           "D. Syarat kecakapan khusus Penegak"
         ],
-        answer: "A",
-        explain: "SKU adalah syarat kecakapan wajib minimal setiap anggota Pramuka."
+        answer: "A"
       },
       {
         id: 44,
@@ -801,8 +749,7 @@
           "C. Menyarankan menunda ibadah karena sedang bermain",
           "D. Mengganggunya agar segera selesai"
         ],
-        answer: "A",
-        explain: "Sikap saling toleransi antarumat beragama."
+        answer: "A"
       },
       {
         id: 45,
@@ -813,15 +760,13 @@
           "C. Pencipta lambang Negara Indonesia",
           "D. Pencipta semboyan Pramuka"
         ],
-        answer: "A",
-        explain: "Pencipta Lambang Tunas Kelapa Gerakan Pramuka."
+        answer: "A"
       },
       {
         id: 46,
         question: "Soal 46. Alat yang digunakan untuk menunjukkan arah mata angin adalah ...",
         options: ["A. Kompas", "B. Termometer", "C. Meteran ukur", "D. Termograf"],
-        answer: "A",
-        explain: "Kompas adalah alat penunjuk arah mata angin."
+        answer: "A"
       },
       {
         id: 47,
@@ -832,22 +777,19 @@
           "C. Kesucian dan kejujuran",
           "D. Semangat perjuangan dan kejujuran"
         ],
-        answer: "A",
-        explain: "Warna Merah melambangkan keberanian."
+        answer: "A"
       },
       {
         id: 48,
         question: "Soal 48. Ibu kota Provinsi Jawa Tengah yaitu ...",
         options: ["A. Surakarta", "B. Klaten", "C. Purwokerto", "D. Semarang"],
-        answer: "D",
-        explain: "Ibu kota Jawa Tengah adalah Kota Semarang."
+        answer: "D"
       },
       {
         id: 49,
         question: "Soal 49. Perhatikan hewan berikut: (1) Kelinci, (2) Ikan, (3) Harimau, (4) Cenderawasih, (5) Kucing, (6) Komodo. Hewan yang termasuk hewan peliharaan ditunjukkan oleh nomor ...",
         options: ["A. (1), (2), dan (5)", "B. (1), (2), dan (3)", "C. (1), (2), dan (4)", "D. (1), (2), dan (6)"],
-        answer: "A",
-        explain: "Kelinci (1), Ikan (2), dan Kucing (5) adalah hewan peliharaan."
+        answer: "A"
       },
       {
         id: 50,
@@ -858,8 +800,7 @@
           "C. Tanda dimulainya perlombaan",
           "D. Tanda berakhirnya kegiatan"
         ],
-        answer: "B",
-        explain: "Wujud saling menghormati dan menghargai antar sesama anggota Pramuka."
+        answer: "B"
       }
     ];
 
@@ -1163,8 +1104,6 @@
       document.getElementById('res-wrong-cnt').innerText = wrongCount;
       document.getElementById('res-empty-cnt').innerText = emptyCount;
 
-      renderAnswerReview();
-
       document.getElementById('exam-app').classList.add('hidden');
       document.getElementById('btn-open-finish').classList.add('hidden');
       document.getElementById('result-app').classList.remove('hidden');
@@ -1193,62 +1132,6 @@
       };
 
       sendDataToGoogleSheets(payload);
-    }
-
-    // Tampilkan Review Jawaban
-    function renderAnswerReview() {
-      const reviewContainer = document.getElementById('review-container');
-      reviewContainer.innerHTML = '';
-
-      questions.forEach((q, idx) => {
-        const userAns = userAnswers[q.id];
-        const isCorrect = userAns === q.answer;
-        const isUnanswered = !userAns;
-
-        let statusBadge = '';
-        let borderStyle = '';
-
-        if (isCorrect) {
-          statusBadge = `<span class="bg-green-100 text-green-800 text-xs font-bold px-2.5 py-1 rounded-md border border-green-300"><i class="fa-solid fa-circle-check"></i> Benar</span>`;
-          borderStyle = 'border-green-200 bg-green-50/20';
-        } else if (isUnanswered) {
-          statusBadge = `<span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-md border border-amber-300"><i class="fa-solid fa-circle-minus"></i> Tidak Diisi</span>`;
-          borderStyle = 'border-amber-200 bg-amber-50/20';
-        } else {
-          statusBadge = `<span class="bg-red-100 text-red-800 text-xs font-bold px-2.5 py-1 rounded-md border border-red-300"><i class="fa-solid fa-circle-xmark"></i> Salah</span>`;
-          borderStyle = 'border-red-200 bg-red-50/20';
-        }
-
-        const card = document.createElement('div');
-        card.className = `p-5 rounded-xl border ${borderStyle} space-y-3`;
-
-        card.innerHTML = `
-          <div class="flex items-center justify-between">
-            <span class="font-bold text-gray-800 text-sm">Soal ${q.id}</span>
-            ${statusBadge}
-          </div>
-          <p class="text-gray-800 font-medium text-sm sm:text-base">${q.question}</p>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm mt-2">
-            <div class="p-2.5 rounded-lg bg-white border border-gray-200">
-              <span class="text-gray-500 block text-xs">Jawaban Anda:</span>
-              <span class="font-bold ${isCorrect ? 'text-green-700' : 'text-red-600'}">
-                ${userAns ? userAns + '. ' + q.options.find(o => o.startsWith(userAns)).substring(3) : '- Tidak Dijawab -'}
-              </span>
-            </div>
-            <div class="p-2.5 rounded-lg bg-white border border-gray-200">
-              <span class="text-gray-500 block text-xs">Kunci Jawaban:</span>
-              <span class="font-bold text-green-700">
-                ${q.answer}. ${q.options.find(o => o.startsWith(q.answer)).substring(3)}
-              </span>
-            </div>
-          </div>
-          <div class="p-3 bg-gray-100/80 rounded-lg text-xs text-gray-600 border border-gray-200">
-            <span class="font-bold text-gray-700"><i class="fa-solid fa-lightbulb text-amber-500"></i> Pembahasan:</span> ${q.explain}
-          </div>
-        `;
-
-        reviewContainer.appendChild(card);
-      });
     }
 
     // Ulangi Tes
